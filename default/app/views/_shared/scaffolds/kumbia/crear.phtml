@@ -1,0 +1,23 @@
+<div id="scaffold">
+<?php View::content() ?>
+<h1><?= ucwords("$model"), ": <span>$action_name</span>" ?></h1>
+
+<form action="" method="post">
+
+<?php foreach ($fields as $i => $field) : ?>
+
+<div class= "form-group">
+<label for=""><?= $field ?></label>
+<input type="text" name="" id="" class="form-control" placeholder="" aria-describedby="helpId">
+
+</div>
+<?php endforeach?>
+<input type="submit" value="Enviar" class="btn btn-primary  btn-block">
+</form>
+
+<div class="col-12">
+<br>
+<a href="../" class="btn btn-success btn-block">Listado</a>
+</div>
+<?php //View::partial('editors/tinymce') // ya veremos si incluimos algun wysiwyg?>
+</div>
